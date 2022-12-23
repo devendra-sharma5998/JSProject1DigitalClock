@@ -90,31 +90,6 @@ body{
 
 } 
 
-.msg1
-{
-    position: absolute;
-    border: 2px solid white;
-    margin-left: 500px;
-    height: 60px;
-    width: 150px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: white;
-}
-.msg2
-{
-    position: absolute; 
-    border: 2px solid white;
-    height: 60px;
-    width: 150px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: white;
-    top: 550px;
-    left: 150px;
-}
-
-
  .child2 {
      border: 2px;
      background-color: #C2C2C2;
@@ -152,10 +127,10 @@ body{
     margin-left: 10px;
     color: #3D087B;
 }
-.digits
+/* .digits
 {
     position: relative;
-}
+} */
 /* .t{
     position: absolute;
 } */
@@ -237,6 +212,7 @@ body{
     
     position: absolute;
     background-image: linear-gradient(
+        to right,
         #9140B5,
         #FC5EFF
     );
@@ -257,6 +233,7 @@ body{
   }
   .btn:hover{
     background-image: linear-gradient(
+        to left,
         #FC5EFF,
         #9140B5
     );
@@ -280,6 +257,29 @@ body{
     text-align: center;
     padding-top: 8px;
     box-sizing: border-box;
+}
+
+.backbx1{
+    position: absolute;
+    height: 100px;
+    width: 450px;
+    background-color: white;
+    z-index: -1;
+    opacity: .8;
+    right: 205px;
+    top: 50px;
+    border-radius: 10px;
+}
+.backbx2{
+    position: absolute;
+    height: 100px;
+    width: 400px;
+    background-color: white;
+    z-index: -2;
+    opacity: .5;
+    right: 230px;
+    top: 60px;
+    border-radius: 10px;
 }
 
 

@@ -12,10 +12,10 @@
     <div class="parent">
         <div class="clock" ></div>
     <div class="container">
-        <div class="child1">
+        <div class="child1" >
         <label for="morning" ><img src="./wake_up.png"  alt=""></label>
         <span>set wake up time</span>
-        <select name="wakeup" class="list" >
+        <select name="wakeup" id="select"class="list" >
         <option value="" >06am-07am</option>
         <option value="">07am-08am</option>
         <option value="">08am-09am</option>
@@ -27,7 +27,7 @@
         <label for="morning"><img src="./lunch_time.png" alt=""></label>
         <span>set lunch time</span>
         
-        <select name="wakeup" class="list">
+        <select name="lunch" class="list" id="selectlunch">
         <option value="">06am-07am</option>
         <option value="">07am-08am</option>
         <option value="" >08am-09am</option>
@@ -38,7 +38,7 @@
     
         <label for="morning"><img src="./nap_time.png" alt=""></label>
         <span>set nap time</span>
-        <select name="wakeup" class="list">
+        <select name="nap_time" class="list" id="selectnap">
         <option value="" >06am-07am</option>
         <option value="">07am-08am</option>
         <option value="" >08am-09am</option>
@@ -48,7 +48,7 @@
     <span class="line-between3">|</span>
         <label for="morning"><img src="./wake_up.png" alt=""></label>
         <span>set night time</span>
-        <select name="wakeup" class="list">
+        <select name="night_time" class="list" id="selectnight">
         <option value="">06am-07am</option>
         <option value="">07am-08am</option>
         <option value="">08am-09am</option>
@@ -57,33 +57,33 @@
     </select> 
  </div>
     </div>
-    <div class="msg1">The message and image will change according to the time</div>
-    <div class="msg2">Time will be updated here after clicking on "Set Alarm"</div>
-    <div class=" child2">GOOD MORNING!! WAKE UP!!</div>
+    <div class=" child2" id="goodtext">GOOD MORNING!! WAKE UP!!</div>
     <div class="child3"><span class="text">TIME</span>
-        <span class="digits">
-            <span class="t"> <span class="first-text"><span class="eleven">10</span>  <br><br>hours </span><img  src="./timeline.png" class="time"  alt=""></span>
-            <span class="t"><span class="second-text"><span class="eleven">00</span> <br><br>mins </span><img src="./timeline.png"class="time2"  alt=""></span>
-            <span class="t"><span class="second-text"><span class="eleven">01</span>  <br><br>secs </span><img src="./timeline.png" class="time2"alt=""></span>
-            <span class="t"><span class="second-text"> <span class="am">AM</span> </span><img src="./AM_svg.png" class="time2"alt=""></span>
+        <span id="clock2">
+            <span class="t"> <span class="first-text"><span class="eleven" id="hr">10</span> <br> <br>hours </span><img  src="./timeline.png" class="time"  alt=""></span>:
+            <span class="t"><span class="second-text"><span class="eleven" id="min">00</span><br> <br>mins </span><img src="./timeline.png"class="time2"  alt=""></span>
+            <span class="t"><span class="second-text"><span class="eleven" id="sec">01</span> <br> <br>secs </span><img src="./timeline.png" class="time2"alt=""></span>
+            <span class="t"><span class="second-text"> <span class="am" id="am_pm">AM</span> </span><img src="./AM_svg.png" class="time2"alt=""></span>
         </span>
     </div>
-    <div class="child4">GRAB SOME HEALTHY BREAKFAST</div>
-    <div class="child5"></div>
+    <div class="child4" id="food_timing">GRAB SOME HEALTHY BREAKFAST</div>
+    <div class="child5" id="image"></div>
     
-    <button class="btn">
+    <button class="btn" id="butn">
         <span>Set Alarm</span> 
-        <!-- <span class="btn2">Party time!</span>  -->
+       
     </button>
-
-    <span class="child6">Wake Up Time : 10AM - 11AM <br> Lunch Time : 12PM - 1PM <br> Nap Time : 4PM - 5PM <br> Night Time : 8PM-9AM</span>
+<div  class="child6">
+    <div id="morning">Wake Up Time : 10AM - 11AM </div>
+    <div id="lunch"> Lunch Time : 12PM - 1PM </div>
+    <div id="nap"> Nap Time : 4PM - 5PM </div>
+    <div id="night"> Night Time : 8PM-9AM</div>
 </div>
-    
+</div>
+    <div class="backbx1"></div>
+    <div class="backbx2"></div>
 
-
-
-
-
+<script src="index.js"></script>
 
 
 
